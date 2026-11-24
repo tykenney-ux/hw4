@@ -1,0 +1,25 @@
+{
+  "name": "hw4",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/tykenney-ux/hw4#readme",
+  "bugs": {
+    "url": "https://github.com/tykenney-ux/hw4/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tykenney-ux/hw4.git"
+  },
+  "license": "ISC",
+  "author": "Tyler Kenney",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@menuella/food-safety": "^2.1.0",
+    "ejs": "^7.0.2",
+    "express": "^5.3.0"
+  }
+}
