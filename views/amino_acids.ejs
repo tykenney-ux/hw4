@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<%- include('partials/head.ejs') %>
+
+
+    <body>
+        <h1>Nutrients Query</h1>
+        <%- include('partials/nav.ejs') %>
+            <main>
+                <h2>Amino Acids</h2>
+
+                <% if (nutrients.length===0) { %>
+                    <p>Amino Acids are not found with this food</p>
+                    <% } else { %>
+                        <ul>
+                            <% nutrients.forEach(nutrient=> { %>
+                                <li>
+                                    <%= nutrient.nutrientName %>:
+                                        <%= nutrient.value %>
+                                            <%= nutrient.unitName %>
+                                </li>
+                                <% }) %>
+                        </ul>
+                        <% } %>
+            </main>
+            <%- include('partials/footer.ejs') %>
+
+    </body>
+
+</html>
