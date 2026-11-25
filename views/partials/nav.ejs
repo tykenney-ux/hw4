@@ -1,0 +1,40 @@
+<nav>
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link <%= currentPath === '/' ? 'active' : '' %>" aria-current="page" href="/">New Search</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link <%= currentPath === '/result' ? 'active' : '' %>"
+                href="/result?query=<%= encodeURIComponent(searchTerm) %>">Result </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link <%= currentPath === '/proximates' ? 'active' : '' %>"
+                href="/proximates?query=<%= encodeURIComponent(searchTerm) %>">Proximates &
+                Sugars</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link <%= currentPath === '/minerals' ? 'active' : '' %>"
+                href="/minerals?query=<%= encodeURIComponent(searchTerm) %>">Minerals &
+                Carotenoids</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link <%= currentPath === '/vitamins' ? 'active' : '' %>"
+                href="/vitamins?query=<%= encodeURIComponent(searchTerm) %>">Vitamins &
+                Choline</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link <%= currentPath === '/amino_acids' ? 'active' : '' %>"
+                href="/amino_acids?query=<%= encodeURIComponent(searchTerm) %>">Amino
+                Acids</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link <%= currentPath === '/lipids' ? 'active' : '' %>"
+                href="/lipids?query=<%= encodeURIComponent(searchTerm) %>">Lipids & Fatty Acids</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link <%= currentPath === '/isoflavones' ? 'active' : '' %>"
+                href="/isoflavones?query=<%= encodeURIComponent(searchTerm) %>">Isoflavones &
+                Other Compounds</a>
+        </li>
+    </ul>
+</nav>

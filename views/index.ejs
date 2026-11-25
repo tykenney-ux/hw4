@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<%- include('partials/head.ejs') %>
+
+
+    <body>
+        <h1>Nutrients Query</h1>
+
+        <main>
+            <h2>Enter a type of Food</h2>
+            <form method="POST" action="/search">
+                <input type="text" name="query" placeholder="i.e. cheddar cheese"><br>
+                <span id="search_feeback"></span><br>
+                <button type="submit">Search</button>
+            </form>
+        </main>
+        <%- include('partials/footer.ejs') %>
+
+    </body>
+
+</html>
